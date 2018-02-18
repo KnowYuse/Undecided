@@ -1,1 +1,50 @@
-#Learn Git**The following are from [this page](https://www.liaoxuefeng.com)**- git config --global user.name "Your Name" <p>指定用户名</p>- git config --global user.email "email@example.com" <p>指定用户邮箱</p>- git init <p>初始化一个仓库</p>- git add filename <p>添加文件到仓库</p>- git commit <p>把文件提交到仓库(-m参数输入本次提交的说明)</p>- git status <p>查看仓库当前状态</p>- git diff <p>查看difference</p><p>加HEAD -- filename参数查看工作区和版本库里最新版本的区别</p>- git log <p>查看提交历史记录</p><p>加--graph参数可查看分支合并图</p>- HEAD表示当前版本，上一个版本是HEAD^，上上个版本是HEAD^^，上N个版本可写成HEAD~N- git reset <p>加--hard HEAD^参数回退到上一版本</p><p>加--hard commit-id参数回退到commit-id对应的版本</p>- git reflog <p>记录命令历史</p> 	- git checkout -- filename <p>用版本库里的版本替换工作区的版本</p>- git reset commit-id filename <p>可以回退版本，也可以把暂存区的修改回退到工作区</p>- git rm filename <p>删除文件(需要git commit来生效)</p>- git remote add origin git@server-name:path/repo-name.git <p>关联远程库</p>- git push -u origin master <p>第一次推送master分支的所有内容</p>- git push origin master <p>推送最新修改<p>- git clone git@server-name:path/repo-name.git <p>克隆仓库</p>- git branch <p>查看分支</p>- git branch name <p>创建分支</p>- git checkout name <p>切换分支</p>- git checkout -b name <p>创建并切换分支</p>- git merge name <p>合并某分支到当前分支</p><p>加上--no-ff参数可以用普通模式合并，能看出做过合并</p>- git branch -d name <p>删除分支</p>- git stash <p>“储藏“工作现场</p>- git stash list <p>查看stash列表</p>- git stash apply name<p>恢复指定的工作环境，stash内容并不删除</p>- git stash drop <p>删除stash内容<p>- git stash pop <p>恢复的同时删除stash的内容</p>- git branch -D name <p>丢弃一个没有被合并过的分支</p>
+# Learn Git
+
+**The following are from [this page](https://www.liaoxuefeng.com)**
+
+- git config --global user.name "Your Name" <p>指定用户名</p>
+- git config --global user.email "email@example.com" <p>指定用户邮箱</p>
+- git init <p>初始化一个仓库</p>
+- git add filename <p>添加文件到仓库</p>
+- git commit <p>把文件提交到仓库(-m参数输入本次提交的说明)</p>
+- git status <p>查看仓库当前状态</p>
+- git diff <p>查看difference</p><p>加HEAD -- filename参数查看工作区和版本库里最新版本的区别</p>
+- git log <p>查看提交历史记录</p><p>加--graph参数可查看分支合并图</p>
+- HEAD表示当前版本，上一个版本是HEAD^，上上个版本是HEAD^^，上N个版本可写成HEAD~N
+- git reset <p>加--hard HEAD^参数回退到上一版本</p><p>加--hard commit-id参数回退到commit-id对应的版本</p>
+- git reflog <p>记录命令历史</p> 	
+- git checkout -- filename <p>用版本库里的版本替换工作区的版本</p>
+- git reset commit-id filename <p>可以回退版本，也可以把暂存区的修改回退到工作区</p>
+- git rm filename <p>删除文件(需要git commit来生效)</p>
+- git remote add origin git@server-name:path/repo-name.git <p>关联远程库</p>
+- git push -u origin master <p>第一次推送master分支的所有内容</p>
+- git push origin master <p>推送最新修改<p>
+- git clone git@server-name:path/repo-name.git <p>克隆仓库</p>
+- git branch <p>查看分支</p>
+- git branch name <p>创建分支</p>
+- git checkout name <p>切换分支</p>
+- git checkout -b name <p>创建并切换分支</p>
+- git merge name <p>合并某分支到当前分支</p><p>加上--no-ff参数可以用普通模式合并，能看出做过合并</p>
+- git branch -d name <p>删除分支</p>
+- git stash <p>“储藏“工作现场</p>
+- git stash list <p>查看stash列表</p>
+- git stash apply name<p>恢复指定的工作环境，stash内容并不删除</p>
+- git stash drop <p>删除stash内容<p>
+- git stash pop <p>恢复的同时删除stash的内容</p>
+- git branch -D name <p>丢弃一个没有被合并过的分支</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
